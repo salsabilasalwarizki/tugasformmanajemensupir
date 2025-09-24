@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Manajemen Supir - Tugas 1 Web Programming</title>
+</head>
+<body>
+    <h1>Form Manajemen Supir</h1>
+    <form action="">
+        <table>
+            <tr>
+                <td>
+                    <label for="nama_supir">Nama Supir Travel:</label>
+                </td>
+                <td>
+                    <input type="text" id="nama_supir" name="nama_supir" required>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="email_supir">Email Supir:</label>
+                </td>
+                <td>
+                    <input type="email" id="email_supir" name="email_supir" required>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="no_hp">Nomor HP Supir:</label>
+                </td>
+                <td>
+                    <input type="tel" id="no_hp" name="no_hp" pattern="[0-9]{10,13}" placeholder="Contoh: 081234567890" required>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="destinasi">Destinasi Supir:</label>
+                </td>
+                <td>
+                    <select id="destinasi" name="destinasi" required>
+                        <option value="">-- Pilih Destinasi --</option>
+                        <option value="medan">Medan</option>
+                        <option value="pematang_siantar">Pematang Siantar</option>
+                        <option value="prapat">Prapat</option>
+                        <option value="padang">Padang</option>
+                        <option value="bukittinggi">Bukittinggi</option>
+                        <option value="pekanbaru">Pekanbaru</option>
+                        <option value="banda_aceh">Banda Aceh</option>
+                        <option value="jakarta">Jakarta</option>
+                        <option value="semarang">Semarang</option>
+                        <option value="yogyakarta">Yogyakarta</option>
+                        <option value="surabaya">Surabaya</option>
+                        <option value="malang">Malang</option>
+                        <option value="denpasar">Denpasar</option>
+                        <option value="kupang">Kupang</option>
+                        <option value="makassar">Makassar</option>
+                        <option value="jayapura">Jayapura</option>
+                        <option value="timika">Timika</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="tanggal_berangkat">Tanggal Supir Berangkat:</label>
+                </td>
+                <td>
+                    <input type="date" id="tanggal_berangkat" name="tanggal_berangkat" required>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="waktu_berangkat">Waktu Berangkat:</label>
+                </td>
+                <td>
+                    <input type="time" id="waktu_berangkat" name="waktu_berangkat" required>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="jumlah_penumpang">Jumlah Penumpang yang Dibawa:</label>
+                </td>
+                <td>
+                    <input type="number" id="jumlah_penumpang" name="jumlah_penumpang" min="1" max="50" required>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"></td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Armada:</label>
+                </td>
+                <td>
+                    <input type="radio" id="armada_hiace" name="armada" value="hiace" required>
+                    <label for="armada_hiace">Mobil Hiace</label><br>
+                    <input type="radio" id="armada_laksana" name="armada" value="laksana">
+                    <label for="armada_laksana">Bus Laksana</label><br>
+                    <input type="radio" id="armada_innova" name="armada" value="innova">
+                    <label for="armada_innova">Kijang Innova</label><br>
+                    <input type="radio" id="armada_mercedes" name="armada" value="mercedes">
+                    <label for="armada_mercedes">Mercedes-Benz 10000 OH</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"></td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Validasi Kesiapan Supir:</strong>
+                </td>
+                <td>
+                    <input type="checkbox" id="tidak_ngantuk" name="validasi[]" value="tidak_ngantuk" required>
+                    <label for="tidak_ngantuk">Supir TIDAK sedang dalam kondisi ngantuk berat</label><br>
+                    <input type="checkbox" id="sehat" name="validasi[]" value="sehat" required>
+                    <label for="sehat">Supir dalam keadaan sehat</label><br>
+                    <input type="checkbox" id="tidak_terlarang" name="validasi[]" value="tidak_terlarang" required>
+                    <label for="tidak_terlarang">Supir TIDAK dalam pengaruh obat terlarang atau minuman memabukkan</label>
+                </td>
+            </tr>
+            <tr><td colspan="2"></td></tr>
+            <tr>
+                <td>
+                    <label for="surat_kerja">Upload Surat Kerja:</label>
+                </td>
+                <td>
+                    <input type="file" id="surat_kerja" name="surat_kerja" accept=".pdf,.jpg,.jpeg,.png" required>
+                </td>
+            </tr>
+            <tr><td colspan="2"><br></td
+                ></tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" value="Simpan Data Supir">
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
